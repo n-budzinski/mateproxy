@@ -4,7 +4,7 @@ import waitress
 import argparse
 
 
-parser = argparse.ArgumentParser(description='Just an example',
+parser = argparse.ArgumentParser(description='A proxy for matemaks.pl that bypasses the client-side premium checks.',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter
                                  )
 
