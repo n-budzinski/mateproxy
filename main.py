@@ -91,9 +91,9 @@ def def_post(text):
 app.register_blueprint(mateproxy)
 
 def main(host, port, subdomain):
-    print(f'Listening on http://{url}:{port}/')
+    print(f'Listening on http://{subdomain}.{host}:{port}/')
     waitress.serve(app=app,
-                   host=f"{url}",
+                   host=f"{host}",
                    port=port,
                    threads=10,
                    log_socket_errors=False)
